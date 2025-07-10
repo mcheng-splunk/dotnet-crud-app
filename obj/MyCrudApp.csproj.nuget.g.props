@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\Administrator\.nuget\packages\;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.14.0</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="C:\Users\Administrator\.nuget\packages\" />
+    <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
+  </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <None Include="$(NuGetPackageRoot)opentelemetry.autoinstrumentation\1.11.0\contentFiles\any\any\instrument.cmd" Condition="Exists('$(NuGetPackageRoot)opentelemetry.autoinstrumentation\1.11.0\contentFiles\any\any\instrument.cmd')">
+      <NuGetPackageId>OpenTelemetry.AutoInstrumentation</NuGetPackageId>
+      <NuGetPackageVersion>1.11.0</NuGetPackageVersion>
+      <NuGetItemType>None</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>instrument.cmd</TargetPath>
+      <Private>True</Private>
+      <Link>instrument.cmd</Link>
+    </None>
+    <None Include="$(NuGetPackageRoot)opentelemetry.autoinstrumentation\1.11.0\contentFiles\any\any\instrument.sh" Condition="Exists('$(NuGetPackageRoot)opentelemetry.autoinstrumentation\1.11.0\contentFiles\any\any\instrument.sh')">
+      <NuGetPackageId>OpenTelemetry.AutoInstrumentation</NuGetPackageId>
+      <NuGetPackageVersion>1.11.0</NuGetPackageVersion>
+      <NuGetItemType>None</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>instrument.sh</TargetPath>
+      <Private>True</Private>
+      <Link>instrument.sh</Link>
+    </None>
+  </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)splunk.opentelemetry.autoinstrumentation\1.10.0\contentFiles\any\net8.0\splunk-launch.cmd" Condition="Exists('$(NuGetPackageRoot)splunk.opentelemetry.autoinstrumentation\1.10.0\contentFiles\any\net8.0\splunk-launch.cmd')">
+      <NuGetPackageId>Splunk.OpenTelemetry.AutoInstrumentation</NuGetPackageId>
+      <NuGetPackageVersion>1.10.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>splunk-launch.cmd</TargetPath>
+      <Private>True</Private>
+      <Link>splunk-launch.cmd</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)splunk.opentelemetry.autoinstrumentation\1.10.0\contentFiles\any\net8.0\splunk-launch.sh" Condition="Exists('$(NuGetPackageRoot)splunk.opentelemetry.autoinstrumentation\1.10.0\contentFiles\any\net8.0\splunk-launch.sh')">
+      <NuGetPackageId>Splunk.OpenTelemetry.AutoInstrumentation</NuGetPackageId>
+      <NuGetPackageVersion>1.10.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>splunk-launch.sh</TargetPath>
+      <Private>True</Private>
+      <Link>splunk-launch.sh</Link>
+    </Content>
+  </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)opentelemetry.autoinstrumentation\1.11.0\build\opentelemetry.autoinstrumentation.props" Condition="Exists('$(NuGetPackageRoot)opentelemetry.autoinstrumentation\1.11.0\build\opentelemetry.autoinstrumentation.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.codeanalysis.analyzers\3.3.4\buildTransitive\Microsoft.CodeAnalysis.Analyzers.props" Condition="Exists('$(NuGetPackageRoot)microsoft.codeanalysis.analyzers\3.3.4\buildTransitive\Microsoft.CodeAnalysis.Analyzers.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore\9.0.7\buildTransitive\net8.0\Microsoft.EntityFrameworkCore.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore\9.0.7\buildTransitive\net8.0\Microsoft.EntityFrameworkCore.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore.design\9.0.7\build\net8.0\Microsoft.EntityFrameworkCore.Design.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore.design\9.0.7\build\net8.0\Microsoft.EntityFrameworkCore.Design.props')" />
+  </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgMicrosoft_CodeAnalysis_Analyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_Analyzers)' == '' ">C:\Users\Administrator\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.4</PkgMicrosoft_CodeAnalysis_Analyzers>
+    <PkgMicrosoft_CodeAnalysis_AnalyzerUtilities Condition=" '$(PkgMicrosoft_CodeAnalysis_AnalyzerUtilities)' == '' ">C:\Users\Administrator\.nuget\packages\microsoft.codeanalysis.analyzerutilities\3.3.0</PkgMicrosoft_CodeAnalysis_AnalyzerUtilities>
+    <PkgMicrosoft_EntityFrameworkCore_Tools Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools)' == '' ">C:\Users\Administrator\.nuget\packages\microsoft.entityframeworkcore.tools\9.0.7</PkgMicrosoft_EntityFrameworkCore_Tools>
+  </PropertyGroup>
+</Project>
